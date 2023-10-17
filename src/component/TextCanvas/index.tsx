@@ -1,16 +1,16 @@
 import {ReactNativeZoomableView} from '@openspacelabs/react-native-zoomable-view';
 import React, {useCallback, useState} from 'react';
-import {Button, Text, TouchableOpacity, View} from 'react-native';
+import {Text, TouchableOpacity, View} from 'react-native';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import Animated, {
   useAnimatedStyle,
   useSharedValue,
 } from 'react-native-reanimated';
-import {height, styles, width} from './styles';
 import {CustomModal} from '../CustomModal';
+import {height, styles, width} from './styles';
 
 export const TextCanvas: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const [currentText, setCurrentText] = useState('');
   const [saveTxtData, setSaveTxtData] = useState<string[]>([]);
 
