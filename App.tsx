@@ -13,6 +13,7 @@ import {Colors} from 'react-native/Libraries/NewAppScreen';
 import {RootNavigator} from './src/navigation/RootNavigator';
 
 function App(): JSX.Element {
+  console.disableYellowBox = true;
   return (
     <SafeAreaView style={{flex: 1}}>
       <RootNavigator />
